@@ -10,3 +10,5 @@ export const __pkg = '@chirag127/astro-shell' as const
 
 export type { OrizSiteConfig } from './types'
 export { shell } from './shell'
+export { tokens } from './tokens'
+export type { Tokens } from './tokens'

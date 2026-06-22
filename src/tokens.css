@@ -1,0 +1,86 @@
+/*
+ * @chirag127/astro-shell — tokens.css
+ *
+ * CSS custom properties — every app imports this in its root layout,
+ * then overrides per-app in its own CSS. Mobile-first; values are tuned
+ * for 320px / 768px / 1024px / 1440px breakpoints.
+ *
+ * Override pattern (per-app):
+ *   :root { --color-accent: #c1440e; --font-display: 'Fraunces', serif; }
+ */
+:root {
+  /* color — 5 brand + 9 neutral + semantic */
+  --color-brand-vermilion: #c1440e;
+  --color-brand-mustard: #c08a26;
+  --color-brand-cobalt: #1a3a8f;
+  --color-brand-ledger: #1f2937;
+  --color-brand-pencil: #6b7280;
+
+  --color-neutral-0: #ffffff;
+  --color-neutral-50: #fafaf7;
+  --color-neutral-100: #f4f1ea;
+  --color-neutral-200: #e7e3d8;
+  --color-neutral-300: #cfc9bb;
+  --color-neutral-500: #6b6b66;
+  --color-neutral-700: #3a3a36;
+  --color-neutral-900: #15140f;
+  --color-neutral-1000: #000000;
+
+  --color-paper: var(--color-neutral-50);
+  --color-paper-2: var(--color-neutral-100);
+  --color-ink: var(--color-neutral-900);
+  --color-ink-mute: var(--color-neutral-500);
+  --color-rule: var(--color-neutral-200);
+  --color-accent: var(--color-brand-mustard);
+  --color-danger: var(--color-brand-vermilion);
+
+  /* type — 3 families + 9 sizes */
+  --font-sans: 'Inter Tight', system-ui, sans-serif;
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  --text-2xs: 10px;
+  --text-xs: 11px;
+  --text-sm: 13px;
+  --text-base: 15px;
+  --text-md: 17px;
+  --text-lg: 20px;
+  --text-xl: 24px;
+  --text-2xl: 32px;
+  --text-3xl: 48px;
+
+  /* spacing — 8 steps */
+  --space-unit: 4px;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+
+  /* motion — 3 durations + 3 easings */
+  --dur-fast: 120ms;
+  --dur-base: 200ms;
+  --dur-slow: 360ms;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+
+  /* breakpoints — 4 standard (mobile-first reference) */
+  --bp-sm: 480px;
+  --bp-md: 768px;
+  --bp-lg: 1024px;
+  --bp-xl: 1440px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-paper: var(--color-neutral-900);
+    --color-paper-2: var(--color-neutral-700);
+    --color-ink: var(--color-neutral-50);
+    --color-ink-mute: var(--color-neutral-300);
+    --color-rule: var(--color-neutral-700);
+  }
+}
