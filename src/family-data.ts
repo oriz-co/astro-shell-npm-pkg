@@ -647,9 +647,16 @@ export const FAMILY_BOOKS: FamilyBook[] = [
   },
 ]
 
-/* ───── FAMILY_EXTENSIONS — 0 (none shipped yet) ─────────────────── */
+/* ───── FAMILY_EXTENSIONS — 1 entry ──────────────────────────────── */
 
-export const FAMILY_EXTENSIONS: FamilyExtension[] = []
+export const FAMILY_EXTENSIONS: FamilyExtension[] = [
+  {
+    slug: 'Ai-rewrite',
+    surface: 'chrome',
+    url: 'https://github.com/chirag127/Ai-rewrite',
+    tagline: 'AI-powered text rewriting extension',
+  },
+]
 
 /* ───── FAMILY_SKILLS — 2 entries ─────────────────────────────────── */
 
