@@ -17,3 +17,12 @@ export { shell } from './shell'
 export { tokens } from './tokens'
 export type { Tokens } from './tokens'
 export { pricingUrl } from './pricing-url'
+export {
+  AUTH_ORIGIN,
+  AUTH_COOKIE,
+  readAuthCookie,
+  signInUrl,
+  signOutUrl,
+  authGateInit,
+} from './auth-gate'
+export type { OrizAuthUser } from './auth-gate'

@@ -1,7 +1,7 @@
 {
   "name": "@chirag127/astro-shell",
-  "version": "0.2.1",
-  "description": "Astro 6 base layer — shell() defineConfig wrapper + OrizSiteConfig type + integrations preset (React + sitemap + MDX) + Tailwind v4 vite plugin + reusable Cloudflare Pages deploy workflow + design tokens + dynamic family-data registry (FAMILY_APPS / FAMILY_PACKAGES / FAMILY_APIS / FAMILY_BOOKS / FAMILY_EXTENSIONS / FAMILY_SKILLS).",
+  "version": "0.2.2",
+  "description": "Astro 6 base layer — shell() defineConfig wrapper + OrizSiteConfig type + integrations preset (React + sitemap + MDX) + Tailwind v4 vite plugin + reusable Cloudflare Pages deploy workflow + design tokens + dynamic family-data registry (FAMILY_APPS / FAMILY_PACKAGES / FAMILY_APIS / FAMILY_BOOKS / FAMILY_EXTENSIONS / FAMILY_SKILLS) + cross-domain auth-gate helpers (readAuthCookie / signInUrl / authGateInit) for the central auth.oriz.in surface.",
   "type": "module",
   "license": "MIT",
   "author": "Chirag Singhal <chirag@oriz.in>",
@@ -31,7 +31,8 @@
     "./tokens": "./src/tokens.ts",
     "./tokens.css": "./src/tokens.css",
     "./family-data": "./src/family-data.ts",
-    "./pricing-url": "./src/pricing-url.ts"
+    "./pricing-url": "./src/pricing-url.ts",
+    "./auth-gate": "./src/auth-gate.ts"
   },
   "peerDependencies": {
     "@astrojs/mdx": "^4.0.0",
